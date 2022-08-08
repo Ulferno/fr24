@@ -1,0 +1,32 @@
+{
+  "name": "fr24",
+  "version": "0.0.1",
+  "description": "An unofficial API for interacting with FlightRadar24",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.ts --exec 'ts-node-esm ./src/index.ts' ",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ulferno/fr24.git"
+  },
+  "author": "Caleb Thomas <ulferno@ulferno.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Ulferno/fr24/issues"
+  },
+  "homepage": "https://github.com/Ulferno/fr24#readme",
+  "devDependencies": {
+    "@types/node": "^18.6.4",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@types/iconv": "^3.0.1",
+    "axios": "^0.27.2"
+  }
+}
